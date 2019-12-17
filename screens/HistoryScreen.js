@@ -3,7 +3,7 @@ import { View, Text, Button, StyleSheet, ScrollView,Image,TouchableOpacity, Imag
 
 const HistoryScreen = props => {
     return (
-        <ScrollView>
+        <ScrollView style={{flex:1}}>
             <Text>Historia Gdańska</Text>
             <Text>Nikt tak naprawdę nie wie kiedy powstał Gdańsk, 
                 nie mniej najstarzsze zapiski o tym mieście pochodza z roku 997 kiedy to gościł w nim biskup Wojciech,
@@ -12,7 +12,7 @@ const HistoryScreen = props => {
                  <TouchableOpacity onPress={() => props.navigation.navigate({routeName:'MiddleAge'})}>
               <Image
                 source={require('./assets/gdanskMiddleage.jpg')}
-                
+                style={{maxHeight:200, maxWidth:200, alignSelf:'stretch' }}
               />
             </TouchableOpacity>
         </ScrollView>
