@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet, ScrollView,Image,TouchableOpacity } from 'react-native';
+import { View, Text, Button, StyleSheet, ScrollView,Image,TouchableOpacity, ImageBackground } from 'react-native';
 
 const HistoryScreen = props => {
     return (
@@ -8,7 +8,15 @@ const HistoryScreen = props => {
             <Text>Nikt tak naprawdę nie wie kiedy powstał Gdańsk, 
                 nie mniej najstarzsze zapiski o tym mieście pochodza z roku 997 kiedy to gościł w nim biskup Wojciech,
                  przed swoją misją ewangelizującą wśród Prusów. Gdańsk ma ponad 1000 lat. Jego historie można podzielić na okresy</Text>
+
+                 <TouchableOpacity onPress={() => props.navigation.navigate({routeName:'MiddleAge'})}>
+              <Image
+                source={require('./assets/gdanskMiddleage.jpg')}
+                
+              />
+            </TouchableOpacity>
         </ScrollView>
+
     )
 };
 
