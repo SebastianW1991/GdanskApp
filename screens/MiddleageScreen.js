@@ -5,10 +5,10 @@ import { View, Text, Button, StyleSheet, ScrollView,Image,TouchableOpacity, Imag
 const MiddleageScreen = props => {
     return (
         <ScrollView>
-            <Text>Historia Gdańska</Text>
-            <Text>Nikt tak naprawdę nie wie kiedy powstał Gdańsk, 
-                nie mniej najstarzsze zapiski o tym mieście pochodza z roku 997 kiedy to gościł w nim biskup Wojciech,
-                 przed swoją misją ewangelizującą wśród Prusów. Gdańsk ma ponad 1000 lat. Jego historie można podzielić na okresy</Text>
+            <Text>Gdańsk w Średniowieczu</Text>
+            <Text>Średniowiecze jest dla Gdańska okresem szczególny.
+                 Wtedy to powstaje  znany z czasów dzisiejszych obrys Śródmieścia. Czyli Stare Miasto oraz Główne Miasto, 
+                 wtedy też powstaje wiekszosć z gdańskich budowli sakralnych</Text>
 
         </ScrollView>
 
