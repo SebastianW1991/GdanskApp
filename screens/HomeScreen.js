@@ -1,13 +1,32 @@
 import React from 'react';
-import { View,  StyleSheet, Button } from 'react-native';
-
+import { View,  StyleSheet, Button, Text, Image, TouchableOpacity } from 'react-native';
+import MainMenuButton from '../MainMenuButton';
 
 const HomeScreen = props => {
   return (
 
       <View style={styles.MainScreen}>
+        <View style={styles.LogoSection}>
+          <Text>Tu będzie logo</Text>
+        </View>
+       
+        <View style={styles.MenuSection}>
 
-            <Button style={color = "red"} title="Historia"
+        <TouchableOpacity>
+        <View style={{flex: 1, backgroundColor: 'powderblue'}} >
+          <Text>Hi!
+            </Text>
+            </View>
+        </TouchableOpacity>
+        <View style={{flex: 1, backgroundColor: 'skyblue'}} />
+        <View style={{flex: 1, backgroundColor: 'red'}} />
+        <View style={{flex: 1, backgroundColor: 'powderblue'}} />
+        <View style={{flex: 1, backgroundColor: 'skyblue'}} />
+        <View style={{flex: 1, backgroundColor: 'red'}} />
+        </View>
+        
+
+             <Button  title="Historia" style={ maxWidth=50}
             onPress={() => {
             props.navigation.navigate({
             routeName: 'History'
@@ -18,6 +37,12 @@ const HomeScreen = props => {
             }}
 
           />
+          <MainMenuButton 
+		text="Click Me"
+		onPress={() => {
+			alert("Hi there!!!");
+		}}
+		/>
    
 
 
@@ -31,10 +56,24 @@ const styles = StyleSheet.create({
 
 MainScreen: {
     backgroundColor: '#fff',
-    flex: 0.2,
+    flex: 1,
     justifyContent: 'flex-start',
-    marginTop: 10,
+    width:'100%'
+    
   },
+  LogoSection:{
+    flex:0.2,
+    backgroundColor:'white'
+
+  },
+  MenuSection:{
+    backgroundColor:'red',
+    flex:1,
+    alignSelf:'center',
+    width:'80%',
+    flexDirection:"column"
+  },
+
 
 });
 
