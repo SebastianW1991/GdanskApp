@@ -26,13 +26,13 @@ MainMenuButton.propTypes = {
 const styles = StyleSheet.create({
   textStyle: {
     fontSize:20,
-	color: '#ffffff',
+	color: 'white',
 	textAlign: 'center'
   },
   
   buttonStyle: {
 	padding:10,
-	backgroundColor: '#202646',
+	backgroundColor: 'red',
 	borderRadius:5
   }
 });
