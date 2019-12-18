@@ -11,34 +11,43 @@ const HomeScreen = props => {
         </View>
        
         <View style={styles.MenuSection}>
+        <MainMenuButton 
+		      text="Historia"
+          onPress={() => {
+          props.navigation.navigate({
+          routeName: 'History'
+        })
+      }}		
+		/>
+         <MainMenuButton 
+		      text="Historia"
+          onPress={() => {
+          props.navigation.navigate({
+          routeName: 'History'
+        })
+      }}		
+		/>
+        <MainMenuButton 
+		      text="Historia"
+          onPress={() => {
+          props.navigation.navigate({
+          routeName: 'History'
+        })
+      }}		
+		/>
+        <MainMenuButton 
+		      text="Historia"
+          onPress={() => {
+          props.navigation.navigate({
+          routeName: 'History'
+        })
+      }}		
+		/>
 
-        <TouchableOpacity>
-        <View style={{flex: 1, backgroundColor: 'powderblue'}} >
-          <Text>Hi!
-            </Text>
-            </View>
-        </TouchableOpacity>
-        <View style={{flex: 1, backgroundColor: 'skyblue'}} />
-        <View style={{flex: 1, backgroundColor: 'red'}} />
-        <View style={{flex: 1, backgroundColor: 'powderblue'}} />
-        <View style={{flex: 1, backgroundColor: 'skyblue'}} />
-        <View style={{flex: 1, backgroundColor: 'red'}} />
         </View>
         
 
            
-          <MainMenuButton 
-		text="Historia"
-    onPress={() => {
-      props.navigation.navigate({
-      routeName: 'History'
-
-
-        })
-
-      }}
-		
-		/>
    
 
 
@@ -51,7 +60,7 @@ const HomeScreen = props => {
 const styles = StyleSheet.create({
 
 MainScreen: {
-    backgroundColor: '#fff',
+    backgroundColor: '#FEED24',
     flex: 1,
     justifyContent: 'flex-start',
     width:'100%'
