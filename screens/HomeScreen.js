@@ -26,22 +26,18 @@ const HomeScreen = props => {
         </View>
         
 
-             <Button  title="Historia" style={ maxWidth=50}
-            onPress={() => {
-            props.navigation.navigate({
-            routeName: 'History'
-
-
-              })
-
-            }}
-
-          />
+           
           <MainMenuButton 
-		text="Click Me"
-		onPress={() => {
-			alert("Hi there!!!");
-		}}
+		text="Historia"
+    onPress={() => {
+      props.navigation.navigate({
+      routeName: 'History'
+
+
+        })
+
+      }}
+		
 		/>
    
 
