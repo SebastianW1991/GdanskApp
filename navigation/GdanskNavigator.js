@@ -8,8 +8,14 @@ import ContemporaryScreen from '../screens/ContemporaryScreen';
 const GdanskNavigator = createStackNavigator({
   Home: HomeScreen,
   History: HistoryScreen,
-  Medieval:MedievalScreen,
-  Contemporary:ContemporaryScreen,
+  Medieval: MedievalScreen,
+  Contemporary: ContemporaryScreen,
+  Modern: ModernScreen,
+  TourDolneMiasto:TourDolneMiastoScreen,
+  TourMainCity:TourMainCityScreen,
+  TourOliwa:TourOliwaScreen,
+
+
 });
 
 export default createAppContainer(GdanskNavigator);
