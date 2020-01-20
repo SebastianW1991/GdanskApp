@@ -5,6 +5,9 @@ import MainMenuButton from '../MainMenuButton';
 const HomeScreen = props => {
   return (
     <ImageBackground source={require('./assets/MainPhoto.jpg')} style={{width: '100%', height: '100%'}}>
+      <View style={styles.LogoSection}>
+        <Image  source={require('./assets/icon2.png')} style={styles.Logo}></Image>
+      </View>
       <View style={styles.MenuSection}>
           <MainMenuButton 
 		      text="Historia"
@@ -22,6 +25,30 @@ const HomeScreen = props => {
           })
           }}		
 		      />
+          <MainMenuButton 
+		      text="Znani Gdańszczanie"
+          onPress={() => {
+          props.navigation.navigate({
+          routeName: 'VIP'
+          })
+          }}		
+		      />
+          <MainMenuButton 
+		      text="Jak Oni Żyli"
+          onPress={() => {
+          props.navigation.navigate({
+          routeName: 'EverydayLife'
+          })
+          }}		
+		      />
+          <MainMenuButton 
+		      text="O Mnie"
+          onPress={() => {
+          props.navigation.navigate({
+          routeName: 'About'
+          })
+          }}		
+		      />
       </View>    
   </ImageBackground>
 
@@ -30,21 +57,27 @@ const HomeScreen = props => {
 };
 
 const styles = StyleSheet.create({
-
-MainScreen: {
-    backgroundColor: '#FEED24',
-    flex: 1,
-    justifyContent: 'flex-start',
-    width:'100%',
-    backgroundColor:'red',
-    opacity: 0.2,
-  },
-  MenuSection:{
-    flex:1,
+  LogoSection:{
+    flex:0.3,
     alignSelf:'center',
     width:'100%',
     flexDirection:"column",
     alignContent:"center",
+    marginTop:'20%'
+  },
+  Logo:{
+    alignSelf:"center",
+
+  },
+
+
+  MenuSection:{
+    flex:0.7,
+    alignSelf:'center',
+    width:'100%',
+    flexDirection:"column",
+    alignContent:"center",
+    marginTop:'20%'
   },
 
 
