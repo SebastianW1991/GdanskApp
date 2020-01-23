@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { TouchableOpacity, Text, StyleSheet,ImageBackground } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 class MainMenuButton extends Component {
 	render() {
@@ -25,15 +25,20 @@ MainMenuButton.propTypes = {
 
 const styles = StyleSheet.create({
   textStyle: {
-    fontSize:20,
-	color: 'white',
-	textAlign: 'center'
+    fontSize:24,
+	color: 'black',
+	textAlign: 'center',
+	opacity:1
   },
   
   buttonStyle: {
 	padding:10,
 	backgroundColor: 'red',
-	borderRadius:5
+	borderRadius:25,
+	width:'80%',
+	alignSelf:"center",
+	opacity:0.4,
+	marginTop:10
   }
 });
 
