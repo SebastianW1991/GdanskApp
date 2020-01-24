@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import { Text, View } from 'react-native';
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
-
 import GdanskNavigator from './navigation/GdanskNavigator';
 
 const fetchFonts = () => {
   return Font.loadAsync({
-    'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
+    'Chomsky': require('./assets/fonts/Chomsky.otf'),
     'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf')
   });
 };
@@ -24,5 +23,5 @@ export default function App() {
     );
   }
 
-  return <GdanskNavigator />;
+  return <GdanskNavigator/>;
 }
