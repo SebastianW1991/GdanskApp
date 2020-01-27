@@ -20,7 +20,7 @@ const VIPScreen = props => {
         <Text style={styles.text}>
           Gdańsk, przez wieki był jednym z najważniejszych i najbogatszych miast
           Polski, jest miastem o bogatym dorobku kulturalnym, naukowym jak i
-          artystycznym. Ponizej są przedstawione sylwetki niektórych z nich.
+          artystycznym. Poniżej są przedstawione sylwetki niektórych z nich.
         </Text>
       </View>
       <ScrollView>
@@ -29,7 +29,7 @@ const VIPScreen = props => {
             text="Jan Heweliusz"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Medieval"
+                routeName: "Hevelius"
               });
             }}
           />
