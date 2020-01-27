@@ -37,13 +37,6 @@ const HistoryScreen = props => {
           ponad 1000 lat. Jego historie można podzielić na okresy
         </Text>
 
-        {/* <TouchableOpacity onPress={() => props.navigation.navigate({routeName:'Medieval'})}>
-              <ImageBackground
-                imageStyle={{ borderRadius: 25, }}
-                source={require('./assets/gdanskMiddleage.jpg')}
-                style={{height:200, maxWidth:'100%', alignSelf:'stretch', borderRadius: 25 }}
-              ><Text style={{maxHeight:100, alignSelf:"center", margin:80, fontSize:35, fontFamily:'Chomsky'}}>Średniowiecze</Text></ImageBackground>
-            </TouchableOpacity> */}
         <View style={styles.MenuSection}>
           <MainHistoryButton
             text="Średniowiecze"
