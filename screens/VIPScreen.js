@@ -37,7 +37,7 @@ const VIPScreen = props => {
             text="Daniel Gralath"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Contemporary"
+                routeName: "Gralath"
               });
             }}
           />
