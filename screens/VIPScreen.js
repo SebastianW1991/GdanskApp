@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
   },
   textField: {
     width: "100%",
-    height: "22%",
+    height: "35%",
     backgroundColor: "white",
     opacity: 0.8,
     borderBottomEndRadius: 25,

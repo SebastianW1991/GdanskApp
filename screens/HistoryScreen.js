@@ -18,7 +18,7 @@ const HistoryScreen = props => {
       <View
         style={{
           width: "100%",
-          height: "20%",
+          height: "30%",
           backgroundColor: "white",
           opacity: 0.8,
           borderBottomEndRadius: 25,
@@ -30,8 +30,8 @@ const HistoryScreen = props => {
         >
           Historia Gdańska
         </Text>
-        <Text>
-          Nikt tak naprawdę nie wie kiedy powstał Gdańsk, nie mniej najstarzsze
+        <Text style={{ textAlign: "center" }}>
+          Nikt tak naprawdę nie wie kiedy powstał Gdańsk, nie mniej najstarsze
           zapiski o tym mieście pochodza z roku 997 kiedy to gościł w nim biskup
           Wojciech, przed swoją misją ewangelizującą wśród Prusów. Gdańsk ma
           ponad 1000 lat. Jego historie można podzielić na okresy

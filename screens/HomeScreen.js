@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  View,
-  StyleSheet,
-  Button,
-  Text,
-  Image,
-  TouchableOpacity,
-  ImageBackground
-} from "react-native";
+import { View, StyleSheet, Image, ImageBackground } from "react-native";
 import MainMenuButton from "../MainMenuButton";
 
 const HomeScreen = props => {

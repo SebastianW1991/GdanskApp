@@ -20,10 +20,11 @@ MainMenuButton.propTypes = {
 
 const styles = StyleSheet.create({
   textStyle: {
-    fontSize: 24,
+    fontSize: 20,
     color: "black",
     textAlign: "center",
-    opacity: 1
+    opacity: 1,
+    fontFamily: "Chomsky"
   },
 
   buttonStyle: {
@@ -32,7 +33,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     width: "80%",
     alignSelf: "center",
-    opacity: 0.4,
+    opacity: 0.8,
     marginTop: 10
   }
 });
