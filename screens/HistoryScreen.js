@@ -17,60 +17,63 @@ const HistoryScreen = props => {
     >
       <View
         style={{
-          width: "100%",
-          height: "30%",
+          width: "80%",
+          height: "100%",
           backgroundColor: "white",
-          opacity: 0.8,
-          borderBottomEndRadius: 25,
-          borderBottomStartRadius: 25
+          opacity: 0.5,
+          marginRight: "10%",
+          marginLeft: "10%"
         }}
       >
-        <Text
-          style={{ alignSelf: "center", fontFamily: "Chomsky", fontSize: 25 }}
-        >
-          Historia Gdańska
-        </Text>
-        <Text style={{ textAlign: "center" }}>
-          Nikt tak naprawdę nie wie kiedy powstał Gdańsk, nie mniej najstarsze
-          zapiski o tym mieście pochodza z roku 997 kiedy to gościł w nim biskup
-          Wojciech, przed swoją misją ewangelizującą wśród Prusów. Gdańsk ma
-          ponad 1000 lat. Jego historie można podzielić na okresy
-        </Text>
-
-        <View style={styles.MenuSection}>
-          <MainHistoryButton
-            text="Średniowiecze"
-            onPress={() => {
-              props.navigation.navigate({
-                routeName: "Medieval"
-              });
-            }}
-          />
-          <MainHistoryButton
-            text="Nowożytność"
-            onPress={() => {
-              props.navigation.navigate({
-                routeName: "Contemporary"
-              });
-            }}
-          />
-          <MainHistoryButton
-            text="Oświecenie"
-            onPress={() => {
-              props.navigation.navigate({
-                routeName: "VIP"
-              });
-            }}
-          />
-          <MainHistoryButton
-            text="Współczesność"
-            onPress={() => {
-              props.navigation.navigate({
-                routeName: "Modern"
-              });
-            }}
-          />
+        <View>
+          <Text
+            style={{ alignSelf: "center", fontFamily: "Chomsky", fontSize: 25 }}
+          >
+            Historia Gdańska
+          </Text>
+          <Text style={{ textAlign: "center", fontSize: 20 }}>
+            Nikt tak naprawdę nie wie kiedy powstał Gdańsk, nie mniej najstarsze
+            zapiski o tym mieście pochodza z roku 997 kiedy to gościł w nim
+            biskup Wojciech, przed swoją misją ewangelizującą wśród Prusów.
+            Gdańsk ma ponad 1000 lat. Jego historie można podzielić na okresy
+          </Text>
         </View>
+        <ScrollView>
+          <View style={styles.MenuSection}>
+            <MainHistoryButton
+              text="Średniowiecze"
+              onPress={() => {
+                props.navigation.navigate({
+                  routeName: "Medieval"
+                });
+              }}
+            />
+            <MainHistoryButton
+              text="Nowożytność"
+              onPress={() => {
+                props.navigation.navigate({
+                  routeName: "Contemporary"
+                });
+              }}
+            />
+            <MainHistoryButton
+              text="Oświecenie"
+              onPress={() => {
+                props.navigation.navigate({
+                  routeName: "VIP"
+                });
+              }}
+            />
+            <MainHistoryButton
+              text="Współczesność"
+              onPress={() => {
+                props.navigation.navigate({
+                  routeName: "Modern"
+                });
+              }}
+            />
+          </View>
+        </ScrollView>
       </View>
     </ImageBackground>
   );
