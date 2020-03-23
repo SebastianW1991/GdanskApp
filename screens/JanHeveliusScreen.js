@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  View,
-  Text,
-  Button,
-  StyleSheet,
-  ScrollView,
-  Image,
-  TouchableOpacity,
-  ImageBackground
-} from "react-native";
+import { Text, StyleSheet, ScrollView, Image } from "react-native";
 
 const JanHeveliusScreen = props => {
   return (
