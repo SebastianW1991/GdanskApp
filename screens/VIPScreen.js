@@ -6,10 +6,10 @@ import {
   ScrollView,
   Image,
   TouchableOpacity,
-  ImageBackground
+  ImageBackground,
 } from "react-native";
 import MainHistoryButton from "../MainHistoryButton";
-const VIPScreen = props => {
+const VIPScreen = (props) => {
   return (
     <ImageBackground
       source={require("./assets/MainPhoto.jpg")}
@@ -29,7 +29,7 @@ const VIPScreen = props => {
             text="Jan Heweliusz"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Hevelius"
+                routeName: "Hevelius",
               });
             }}
           />
@@ -37,15 +37,15 @@ const VIPScreen = props => {
             text="Daniel Gralath"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Gralath"
+                routeName: "Gralath",
               });
             }}
           />
           <MainHistoryButton
-            text="Hugo Conventz"
+            text="Hugo Conwentz"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "VIP"
+                routeName: "Conwentz",
               });
             }}
           />
@@ -53,7 +53,7 @@ const VIPScreen = props => {
             text="Nathaniel Wolf"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Modern"
+                routeName: "Wolf",
               });
             }}
           />
@@ -61,7 +61,7 @@ const VIPScreen = props => {
             text="Daniel Fahrenheit"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Modern"
+                routeName: "Fahrenheit",
               });
             }}
           />
@@ -69,7 +69,7 @@ const VIPScreen = props => {
             text="Abraham van den Block"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Modern"
+                routeName: "AvdB",
               });
             }}
           />
@@ -77,7 +77,7 @@ const VIPScreen = props => {
             text="Izaak van den Block"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Modern"
+                routeName: "IvdB",
               });
             }}
           />
@@ -85,7 +85,7 @@ const VIPScreen = props => {
             text="Jan Strakowski"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Modern"
+                routeName: "Strakowski",
               });
             }}
           />
@@ -93,7 +93,7 @@ const VIPScreen = props => {
             text="Daniel Chodowiecki"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Modern"
+                routeName: "Chodowiecki",
               });
             }}
           />
@@ -101,7 +101,7 @@ const VIPScreen = props => {
             text="Jacob Kabrun"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Modern"
+                routeName: "Kabrun",
               });
             }}
           />
@@ -109,7 +109,7 @@ const VIPScreen = props => {
             text="Anton Möller"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Modern"
+                routeName: "Moller",
               });
             }}
           />
@@ -117,7 +117,7 @@ const VIPScreen = props => {
             text="Krzysztof Celestyn Mrongovius"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Modern"
+                routeName: "Mrongovius",
               });
             }}
           />
@@ -125,7 +125,7 @@ const VIPScreen = props => {
             text="Johann Uphagen"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Modern"
+                routeName: "Modern",
               });
             }}
           />
@@ -133,7 +133,7 @@ const VIPScreen = props => {
             text="Gunther Grass"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Modern"
+                routeName: "Modern",
               });
             }}
           />
@@ -141,7 +141,7 @@ const VIPScreen = props => {
             text="Lech Wałęsa"
             onPress={() => {
               props.navigation.navigate({
-                routeName: "Modern"
+                routeName: "Modern",
               });
             }}
           />
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: "Chomsky",
     fontSize: 24,
-    alignSelf: "center"
+    alignSelf: "center",
   },
   textField: {
     width: "100%",
@@ -162,11 +162,11 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     opacity: 0.8,
     borderBottomEndRadius: 25,
-    borderBottomStartRadius: 25
+    borderBottomStartRadius: 25,
   },
   text: {
     fontSize: 18,
-    textAlign: "center"
+    textAlign: "center",
   },
   MenuSection: {
     flex: 0.7,
@@ -174,7 +174,7 @@ const styles = StyleSheet.create({
     width: "100%",
     flexDirection: "column",
     alignContent: "center",
-    marginTop: "20%"
-  }
+    marginTop: "20%",
+  },
 });
 export default VIPScreen;
