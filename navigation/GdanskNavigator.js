@@ -13,13 +13,14 @@ import EverydayLifeScreen from "../screens/EverydayLifeScreen";
 import VIPScreen from "../screens/VIPScreen";
 import JanHeveliusScreen from "../screens/JanHeveliusScreen";
 import DanielGralathScreen from "../screens/DanielGralathScreen";
-
+import HugoConwentzScreen from "../screens/HugoConwentzScreen";
+import NathanielWolfScreen from "../screens/NathanielWolfScreen";
 const GdanskNavigator = createStackNavigator({
   Home: {
     screen: HomeScreen,
     navigationOptions: {
-      header: null
-    }
+      header: null,
+    },
   },
   History: HistoryScreen,
   Medieval: MedievalScreen,
@@ -36,19 +37,37 @@ const GdanskNavigator = createStackNavigator({
     navigationOptions: {
       title: "Jan Heweliusz",
       headerStyle: {
-        fontSize: 24
-      }
-    }
+        fontSize: 24,
+      },
+    },
   },
   Gralath: {
     screen: DanielGralathScreen,
     navigationOptions: {
       title: "Daniel Gralath",
       headerStyle: {
-        fontSize: 24
-      }
-    }
-  }
+        fontSize: 24,
+      },
+    },
+  },
+  Conwentz: {
+    screen: HugoConwentzScreen,
+    navigationOptions: {
+      title: "Hugo Conwentz",
+      headerStyle: {
+        fontSize: 24,
+      },
+    },
+  },
+  Wolf: {
+    screen: NathanielWolfScreen,
+    navigationOptions: {
+      title: "Nathaniel Wolf",
+      headerStyle: {
+        fontSize: 24,
+      },
+    },
+  },
 });
 
 export default createAppContainer(GdanskNavigator);
